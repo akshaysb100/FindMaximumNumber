@@ -7,26 +7,20 @@ public class MaximumNumberTest {
     @Test
     public void check_IntegerNumbers_FindMaximumNumber() {
 
-        FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
-        Assert.assertEquals(3,findMaximumNumber.checkIntegerMax());
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber(1,4,3);
+        Assert.assertEquals((Integer) 4, findMaximumNumber.toMaximumNumber());
     }
 
     @Test
     public void check_FloatNumbers_FindMaximumNumber() {
 
-        FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
-        Assert.assertEquals((Float) 3f,findMaximumNumber.checkFloatMax());
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber(6.1f, 6.2f, 6.5f);
+        Assert.assertEquals((Float) 6.5f, findMaximumNumber.toMaximumNumber());
     }
 
     @Test
     public void checkGiven_String_FindMaximumNumber() {
-        FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
-        Assert.assertEquals((String) "fsdg",findMaximumNumber.checkStringMax());
-    }
-
-    @Test
-    public void checkGiven_GenericValueAnd_FindMaximumNumber() {
-        FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
-        Assert.assertEquals((Integer) 4,findMaximumNumber.checkGenericMax(3,4,2));
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber("ak", "sk", "pk");
+        Assert.assertEquals((String) "sk", findMaximumNumber.toMaximumNumber());
     }
 }
