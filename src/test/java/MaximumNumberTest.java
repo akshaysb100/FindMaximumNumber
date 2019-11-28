@@ -23,4 +23,10 @@ public class MaximumNumberTest {
         FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
         Assert.assertEquals((String) "fsdg",findMaximumNumber.checkStringMax());
     }
+
+    @Test
+    public void checkGiven_GenericValueAnd_FindMaximumNumber() {
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
+        Assert.assertEquals((Integer) 4,findMaximumNumber.checkGenericMax(3,4,2));
+    }
 }

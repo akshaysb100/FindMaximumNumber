@@ -1,6 +1,6 @@
 package com.maximumnumber.com;
 
-public class FindMaximumNumber {
+public class FindMaximumNumber<T> {
 
     Integer number1=2;
     Integer number2=1;
@@ -52,4 +52,20 @@ public class FindMaximumNumber {
         }
         return maximumNumber;
     }
+
+    T[] checkMaximumNumber;
+
+    public T checkGenericMax(T value1,T value2,T value3) {
+
+        T maximumNumber;
+        if(value1.hashCode()>value2.hashCode() && value1.hashCode()>value3.hashCode()){
+            maximumNumber= value1;
+        }else if (value2.hashCode()>value3.hashCode()){
+            maximumNumber= value2;
+        }else {
+            maximumNumber= value3;
+        }
+        return maximumNumber;
+    }
+
 }
