@@ -35,4 +35,21 @@ public class FindMaximumNumber {
         }
         return maximumNumber;
     }
+
+    String string1 ="aakshay";
+    String string2 ="dklsf";
+    String string3 ="fsdg";
+
+    public String checkStringMax() {
+
+        String maximumNumber;
+        if(string1.compareTo(string2)>0 && string1.compareTo(string3)>0){
+            maximumNumber= string1;
+        }else if (string2.compareTo(string3)>0){
+            maximumNumber= string2;
+        }else {
+            maximumNumber= string3;
+        }
+        return maximumNumber;
+    }
 }

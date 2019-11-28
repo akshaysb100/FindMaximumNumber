@@ -17,4 +17,10 @@ public class MaximumNumberTest {
         FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
         Assert.assertEquals((Float) 3f,findMaximumNumber.checkFloatMax());
     }
+
+    @Test
+    public void checkGiven_String_FindMaximumNumber() {
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber();
+        Assert.assertEquals((String) "fsdg",findMaximumNumber.checkStringMax());
+    }
 }
