@@ -18,4 +18,21 @@ public class FindMaximumNumber {
         }
         return maximumNumber;
     }
+
+    Float floatNumber1=2f;
+    Float floatNumber2 =1f;
+    Float floatNumber3 =3f;
+
+    public Float checkFloatMax() {
+
+        Float maximumNumber;
+        if(floatNumber1.compareTo(floatNumber2)>0 && floatNumber1.compareTo(floatNumber3)>0){
+            maximumNumber=floatNumber1;
+        }else if (floatNumber2.compareTo(floatNumber3)>0){
+            maximumNumber= floatNumber2;
+        }else {
+            maximumNumber= floatNumber3;
+        }
+        return maximumNumber;
+    }
 }
