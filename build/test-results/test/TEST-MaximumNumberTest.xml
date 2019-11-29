@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MaximumNumberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T12:12:24" hostname="admin1-LIVA-Z2V" time="0.02">
+<testsuite name="MaximumNumberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T07:18:11" hostname="admin1-LIVA-Z2V" time="0.046">
   <properties/>
-  <testcase name="check_FloatNumbers_FindMaximumNumber" classname="MaximumNumberTest" time="0.01"/>
-  <testcase name="checkGiven_String_FindMaximumNumber" classname="MaximumNumberTest" time="0.003"/>
-  <testcase name="check_IntegerNumbers_FindMaximumNumber" classname="MaximumNumberTest" time="0.003"/>
+  <testcase name="check_FloatNumbers_FindMaximumNumber" classname="MaximumNumberTest" time="0.042"/>
+  <testcase name="checkGiven_String_FindMaximumNumber" classname="MaximumNumberTest" time="0.001"/>
+  <testcase name="check_IntegerNumbers_FindMaximumNumber" classname="MaximumNumberTest" time="0.001"/>
   <system-out><![CDATA[Maximum value is : 6.5
 Maximum value is : sk
-Maximum value is : 4
+Maximum value is : 6
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

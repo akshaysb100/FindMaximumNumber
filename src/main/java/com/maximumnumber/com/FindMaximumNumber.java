@@ -1,33 +1,30 @@
 package com.maximumnumber.com;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 public class FindMaximumNumber<T extends Comparable> {
 
-
     T maximumNumber;
-    T value1;
-    T value2;
-    T value3;
+    T[] valueArr;
 
-    public FindMaximumNumber(T value1,T value2,T value3){
-        this.value1 =value1;
-        this.value2 =value2;
-        this.value3 =value3;
-    }
-
-    public T toMaximumNumber(){
-        return  checkGenericMax(value1,value2,value3);
-    }
-    public T checkGenericMax(T value1,T value2,T value3) {
-
-        if(value1.compareTo(value2)>0 && value1.compareTo(value3)>0){
-            maximumNumber= value1;
-        }else if (value2.compareTo(value3)>0){
-            maximumNumber= value2;
-        }else {
-            maximumNumber= value3;
+   public FindMaximumNumber(T... val) {
+        T[] array=(T[]) new  Comparable[val.length];
+        int i=0;
+        for(T c:val){
+            array[i]=c;
+            i++;
         }
-        printMaximumValue(maximumNumber);
-        return maximumNumber;
+        this.valueArr = array;
+    }
+
+    public T check(){
+
+      Arrays.sort(valueArr);
+      printMaximumValue(valueArr[valueArr.length-1]);
+      return valueArr[valueArr.length-1];
     }
 
     public void printMaximumValue(T maximumNumber){
